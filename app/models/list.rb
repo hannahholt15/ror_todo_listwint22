@@ -1,4 +1,4 @@
 class List < ApplicationRecord
-
-    validates :title, :desc, presence: true
-  end
+  has_many :todos, dependent: :destroy
+  validates :title, :desc, presence: true
+end
