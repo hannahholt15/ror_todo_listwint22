@@ -1,7 +1,12 @@
+import { Container, Row, Col } from "react-bootstrap";
+import { PriceBox } from '../styles/mainStyles';
+
 const Prices = () => (
-    <>
-      <h1>Prices</h1>
-      <div>
+  <Container>
+    <h1 className="text-center">Prices</h1>
+
+    <Row>
+      <PriceBox>
         <h2>Bronze</h2>
         <h3>Base</h3>
         <ul>
@@ -10,9 +15,9 @@ const Prices = () => (
           <li>Feature</li>
         </ul>
         <button>$</button>
-      </div>
-  
-      <div>
+      </PriceBox>
+
+      <PriceBox>
         <h2>Silver</h2>
         <h3>Base</h3>
         <ul>
@@ -21,9 +26,9 @@ const Prices = () => (
           <li>Feature</li>
         </ul>
         <button>$$</button>
-      </div>
-  
-      <div>
+      </PriceBox>
+
+      <PriceBox>
         <h2>Gold</h2>
         <h3>Base</h3>
         <ul>
@@ -32,9 +37,15 @@ const Prices = () => (
           <li>Feature</li>
         </ul>
         <button>$$$</button>
-      </div>
-    </>
-  )
-  
-  export default Prices;
-  
+      </PriceBox>
+    </Row>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </Container>
+)
+
+export default Prices;
